@@ -2,7 +2,7 @@
 
 ### Description
 Given the head of a linked list and an integer k, the task is to reverse the nodes of the list in groups of k.
-If the number of nodes remaining at the end of thelist is less than k, those nodes should be left in their original order.
+If the number of nodes remaining at the end of the list is less than k, those nodes should be left in their original order.
 
 Example:
     Input: `1 -> 2 -> 3 -> 4 -> 5`, k = 2
@@ -19,8 +19,8 @@ Concept:
 - Build a completely new linked list from the modified array.
 
 Complexity:
-Time: $$O(N)$$
-Space: $$O(N)$$
+Time: `O(N)`
+Space: `O(N)`
 
 ## Approach 2: Better (Iterative)
 This is better because it modifies the list directly without using significant extra memory.
@@ -29,8 +29,8 @@ Concept:
 - Iterate through the linked list one group at a time. For each group of k nodes, reverse the pointers "in-place" to reverse the group. This requires carefully managing pointers to link the end of the previous group to the start of the newly reversed group.
 
 Complexity:
-Time: $$O(N)$$
-Space: $$O(1)$$
+Time: `O(N)`
+Space: `O(1)`
 
 ## Approach 3: Optimal (Recursive)
 This is often considered the most elegant solution due to its concise and clean code structure.
@@ -40,5 +40,5 @@ Concept:
 
 Complexity:
 
-Time: $$O(N)$$
-Space: $$O(N/k)$$ for the recursion call stack.
+Time: `O(N)`
+Space: `O(N/k)` for the recursion call stack.
